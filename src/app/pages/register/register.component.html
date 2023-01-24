@@ -1,0 +1,52 @@
+<div class="w-2/5 bg-blue-200 rounded-xl p-6 mx-auto">
+  <form [formGroup]="formRegister">
+    <!-- groupINputs -->
+    <div>
+      <div>
+        <label for="producto">Producto</label>
+        <div>
+          <input
+            class="border border-solid border-slate-500 rounded-xl px-4 py-2"
+            type="text"
+            formControlName="producto"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <label for="costo">costo</label>
+        <div>
+          <input
+            class="border border-solid border-slate-500 rounded-xl px-4 py-2"
+            type="text"
+            formControlName="costo"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <label for="foto">foto</label>
+        <div>
+          <input
+            class="border border-solid border-slate-500 rounded-xl px-4 py-2"
+            type="text"
+            formControlName="foto"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <button
+        class="rounded-full px-4 py-2 bg-blue-500 hover:bg-blue-800 hover:text-white"
+        (click)="onSubmit()"
+      >
+        Register
+      </button>
+    </div>
+  </form>
+</div>
